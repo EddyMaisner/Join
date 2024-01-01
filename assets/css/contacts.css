@@ -671,7 +671,7 @@ button {
     color: rgb(42, 54, 71);
     border-radius: 6px;
     padding: 6px;
-    font-size: 16px;
+    font-size: 1rem;
     border: 1px solid transparent;
     margin: 2px;
     font-family: 'Open Sans', sans-serif;
@@ -697,6 +697,7 @@ button:hover {
     text-align: center;
     color: #000;
     border-radius: 6px;
+    width: 300px;
 }
 
 .moreVertContainer {

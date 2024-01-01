@@ -17,7 +17,7 @@ nav {
 }
 
 .options-modal {
-    display: none;
+    display:flex
 }
 
 .w3-include {
