@@ -168,12 +168,24 @@ getTime();
 
 // Name in greeting
 function renderGreetingName() {
-  let currentUser = localStorage.getItem("currentUser");
+  let currentUser = localStorage.getItem("Usercurrent");
   const greetingNameContainer = document.getElementById("greeting-name");
-  const greetingContainer = document.getElementById("greeting");
-  if (currentUser !== "Guest") {
-    greetingNameContainer.innerHTML = /*html*/ `${currentUser}`;
+  const userInitialsContainer = document.getElementById("user-initials-header");
+
+  if (currentUser && currentUser !== "Guest") {
+    // Setze den Grußnamen
+    greetingNameContainer.innerHTML = `${currentUser}`;
+
+    // Extrahiere die Initialen und setze sie in das Initialen-Container
+    const initials = getInitials(currentUser);
+    userInitialsContainer.innerHTML = initials;
   }
+}
+
+function getInitials(name) {
+  const names = name.split(' ');
+  const initials = names.map(n => n[0].toUpperCase());
+  return initials.join('');
 }
 
 renderGreetingName();
