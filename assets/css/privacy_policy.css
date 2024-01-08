@@ -266,14 +266,6 @@ header {
         background-color: white;
     }
 
-    .nav-links {
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        gap: 0;
-    }
-
     main {
         margin-left: 0;
     }
