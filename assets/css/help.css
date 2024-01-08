@@ -17,9 +17,9 @@ nav {
 }
 
 .options-modal {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    
+
 }
 
 .w3-include {
@@ -48,10 +48,6 @@ nav {
     display: flex;
 }
 
-a {
-    
-}
-
 .nav-links {
     display: flex;
     flex-direction: column;
@@ -76,12 +72,10 @@ a {
 
 h1 {
     color: var(--black, #000);
-
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
-
 }
 
 img:hover {
@@ -131,12 +125,11 @@ p {
     align-self: stretch;
     color: var(--black, #000);
     flex-wrap: wrap;
-    font-family: Open Sans;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-
 }
 
 .main {
@@ -220,7 +213,7 @@ header {
 }
 
 @media (max-width: 3300px) {
-    .p-heade-links{
+    .p-heade-links {
         display: none;
     }
 }
@@ -242,6 +235,14 @@ header {
 
     p {
         font-size: 15px;
+        align-self: stretch;
+        color: var(--black, #000);
+        flex-wrap: wrap;
+        font-family: sans-serif, Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
     }
 
     h2 {
@@ -350,6 +351,14 @@ header {
 
     p {
         font-size: 10px;
+        align-self: stretch;
+        color: var(--black, #000);
+        flex-wrap: wrap;
+        font-family: sans-serif, Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
     }
 
     h2 {
@@ -391,9 +400,10 @@ header {
 
 @media (max-width: 400px) {
 
-    .single-nav-links{
+    .single-nav-links {
         gap: 0;
         padding: 0;
+        font-size: 12px;
     }
 
     #backButton {

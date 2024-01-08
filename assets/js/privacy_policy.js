@@ -25,6 +25,7 @@ async function includeHTML() {
   }
 
 
+
   /**
  * Adds an event listener to the "backButton" element that navigates to the previous page in the browser history.
  * @description This function is triggered when the DOM content is fully loaded.
@@ -42,4 +43,10 @@ async function includeHTML() {
 /** go to legal_notice.html */
   function redirectToLegalNotice() {
     window.location.href = "./legal_notice.html";
+}
+
+function openOptions(event) {
+  const optionsModal = document.querySelector('.options-modal');
+  optionsModal.classList.toggle('d-none');
+  event.stopPropagation();
 }
