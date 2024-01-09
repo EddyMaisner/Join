@@ -16,6 +16,10 @@ nav {
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
 }
 
+.backButtonImg {
+    width: 40px;
+}
+
 .options-modal {
     display: flex;
     flex-direction: column;
@@ -89,10 +93,11 @@ img:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 h2 {
-    width: 346px;
+
     color: var(--ligth-blue, #005DFF);
     font-size: 30px;
     font-style: normal;
@@ -132,6 +137,11 @@ p {
     line-height: 120%;
 }
 
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
 .main {
     display: grid;
     justify-content: center;
@@ -151,10 +161,6 @@ p {
     color: #0038FF;
 }
 
-.logo {
-    height: 80px;
-    width: 80px;
-}
 
 a:-webkit-any-link {
     color: -webkit-link;
@@ -220,9 +226,8 @@ header {
 
 @media (max-width: 1080px) {
 
-    .logo {
-        height: 40px;
-        width: 40px;
+    .navbarLeft {
+        display: none;
     }
 
     nav {
@@ -266,7 +271,9 @@ header {
     }
 
     .main {
-        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     a {
@@ -330,7 +337,9 @@ header {
 
 @media (max-width: 650px) {
     .main {
-        width: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 }
 
@@ -383,7 +392,7 @@ header {
     }
 
     .main {
-        width: 0px;
+        width: 100%;
     }
 
     a {
@@ -394,7 +403,7 @@ header {
 @media (max-width: 460px) {
 
     .navbarLeft {
-        width: 164px;
+        display: none;
     }
 }
 
@@ -406,20 +415,17 @@ header {
         font-size: 12px;
     }
 
-    #backButton {
-        position: absolute;
-        left: 120px;
-        top: 200px;
+    .backButtonImg {
+        width: 25px;
     }
+
 
     nav {
         background-color: white;
     }
 
     .navbarLeft {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
 
     .mainTextContainer {
@@ -427,19 +433,24 @@ header {
     }
 
     a {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     h2 {
-        font-size: 8px;
+        font-size: 15px;
     }
 
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 265px;
+    }
 
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
 }
