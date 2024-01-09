@@ -133,6 +133,10 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+#backButton {
+    width: 40px;
+}
+
 .main {
     display: grid;
     justify-content: center;
@@ -238,7 +242,7 @@ header {
     }
 
     .main {
-        width: 120px;
+        width: 100%;
     }
 
     a {
@@ -251,6 +255,10 @@ header {
         height: 75px;
         justify-content: center;
         padding: 0;
+    }
+
+    .navbarLeft {
+        display: none;
     }
 
     .nav-bottom {
@@ -274,6 +282,10 @@ header {
         flex-direction: column;
         justify-content: center;
     }
+
+    .logo {
+        width: 50px;
+    }
 }
 
 @media (max-width: 860px) {
@@ -287,9 +299,7 @@ header {
 }
 
 @media (max-width: 650px) {
-    .main {
-        width: 0;
-    }
+
 }
 
 @media (max-width: 500px) {
@@ -358,6 +368,12 @@ header {
     }
 
     .mainTextContainer {
-        width: 200px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    #backButton {
+        width: 0px;
     }
 }

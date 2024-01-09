@@ -457,28 +457,14 @@ header {
 
 @media (max-width: 355px) {
     p {
-        width: 200px;
+        width: 180px;
     }
 
-    #backButton {
-        position: absolute;
-        left: 120px;
-        top: 180px;
-    }
 }
 
-@media (max-width: 333px) {
-    #backButton {
-        position: absolute;
-        left: 120px;
-        top: 180px;
-    }
-}
 
 @media (max-width: 320px) {
     #backButton {
-        position: absolute;
-        left: 120px;
-        top: 180px;
+        width: 30px;
     }
 }
